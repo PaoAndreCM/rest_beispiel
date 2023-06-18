@@ -55,9 +55,9 @@ public class JaxbCDATASample {
 
     public static void main(String[] args) throws Exception {
         // unmarshal a doc
-        JAXBContext jc = JAXBContext.newInstance("...");
+        JAXBContext jc = JAXBContext.newInstance("demo.messages");
         Unmarshaller u = jc.createUnmarshaller();
-        Object o = u.unmarshal(...);
+        Object o = u.unmarshal(new File( "blabla.xml" ));
 
         // create a JAXB marshaller
         Marshaller m = jc.createMarshaller();
